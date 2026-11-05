@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página no encontrada — Moovsi</title>
+  <meta name="description" content="Ups, parece que esta pantalla no existe. Vuelve a Moovsi para seguir descubriendo películas y series.">
+  <meta name="theme-color" content="#7871FF">
+  <link rel="icon" type="image/png" href="assets/img/app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .not-found-main {
+      min-height: calc(100vh - 180px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    .not-found-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-radius: 28px;
+      padding: 3rem 2rem;
+      max-width: 520px;
+      box-shadow: 0 20px 45px rgba(27, 26, 75, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+    .not-found-code {
+      font-family: 'Fredoka', cursive, sans-serif;
+      font-size: 5rem;
+      line-height: 1;
+      font-weight: 700;
+      color: #7871FF;
+      margin-bottom: 0.5rem;
+    }
+    .not-found-card h1 {
+      font-size: 1.85rem;
+      margin-bottom: 0.75rem;
+      color: #1A1938;
+    }
+    .not-found-card p {
+      color: #555375;
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="stripes" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Moovsi, volver al inicio">
+      <img src="assets/img/app-icon.png" alt="" width="40" height="40">
+      <span>Moovsi</span>
+    </a>
+  </header>
+
+  <main id="contenido" class="not-found-main">
+    <div class="not-found-card">
+      <div class="not-found-code" aria-hidden="true">404</div>
+      <h1>¡Ups! Esta sala está vacía</h1>
+      <p>La página o enlace que buscas no existe o ha cambiado de lugar. Vuelve a la cartelera para no perderte nada.</p>
+      <a class="btn" href="index.html">Ir al inicio</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Moovsi. Todos los derechos reservados.</p>
+    <ul class="footer-links">
+      <li><a href="privacy.html">Política de Privacidad</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
