@@ -50,7 +50,7 @@
       <div class="hero-copy">
         <div class="coming-soon-pill">
           <span class="pulse-dot" aria-hidden="true"></span>
-          <span>¡Muy pronto en iOS y Android!</span>
+          <span class="pill-text"><span>¡Muy pronto en las tiendas!</span> <span>¡Prueba la beta ahora!</span></span>
         </div>
         <h1 id="hero-title">¿Qué vemos hoy? <em>Desliza</em> y listo.</h1>
         <p>Moovsi convierte la eterna discusión de «elige tú» en un juego. Desliza películas y series, haz match con tus amigos y poneos de acuerdo en un minuto.</p>
@@ -163,12 +163,12 @@
     </section>
 
     <section class="final" id="descargar" aria-labelledby="final-title">
-      <span class="badge-tag">Coming soon</span>
+      <span class="badge-tag">Beta abierta</span>
       <h2 id="final-title">La próxima peli la elegís en un minuto.</h2>
-      <p class="platforms">Próximamente disponible para iPhone y Android.</p>
+      <p class="platforms">¡Muy pronto en App Store y Google Play! ¡Prueba la beta ahora en iPhone y Android!</p>
       <ul class="stores">
-        <li><button class="btn btn-yellow js-download-btn" type="button">Descargar para iOS</button></li>
-        <li><button class="btn btn-yellow js-download-btn" type="button">Descargar para Android</button></li>
+        <li><a class="btn btn-yellow" href="https://testflight.apple.com/join/x67XYfP6" target="_blank" rel="noopener">Beta para iOS (TestFlight)</a></li>
+        <li><a class="btn btn-yellow" href="https://play.google.com/store/apps/details?id=app.movsy.android" target="_blank" rel="noopener">Beta para Android (Google Play)</a></li>
       </ul>
     </section>
   </main>
@@ -195,7 +195,7 @@
     <p class="copy"><small>© 2026 Catdevs · Este producto usa la API de TMDB pero no está avalado ni certificado por TMDB.</small></p>
   </footer>
 
-  <!-- Modal Coming Soon -->
+  <!-- Modal Beta abierta -->
   <dialog id="coming-soon-modal" class="modal" aria-labelledby="modal-title">
     <div class="modal-card">
       <div class="modal-stripes" aria-hidden="true"></div>
@@ -204,21 +204,23 @@
       <div class="modal-body">
         <div class="modal-badge-wrap">
           <img src="assets/img/app-icon.png" alt="Moovsi" width="80" height="80" class="modal-icon">
-          <span class="modal-stamp">¡SOON!</span>
+          <span class="modal-stamp">¡BETA!</span>
         </div>
 
-        <h3 id="modal-title">¡Estamos a punto de estrenar!</h3>
+        <h3 id="modal-title">¡Ya puedes probar Moovsi!</h3>
         
         <p class="modal-text">
-          Estamos preparando los últimos detalles de Moovsi y pasando las revisiones finales en <strong>App Store</strong> y <strong>Google Play</strong>.
+          Estamos en <strong>beta abierta</strong>: únete desde <strong>TestFlight</strong> en iPhone o desde <strong>Google Play</strong> en Android.
         </p>
 
         <p class="modal-subtext">
-          Muy pronto podrás descargarla, crear tu primera sala con amigos y elegir qué ver sin discusiones en el sofá.
+          Crea tu primera sala con amigos y elige qué ver sin discusiones en el sofá. Tus comentarios nos ayudan a mejorarla antes de llegar a las tiendas.
         </p>
 
         <div class="modal-actions">
-          <button class="btn btn-yellow js-modal-close" type="button">¡Qué ganas! Entendido</button>
+          <a class="btn" href="https://testflight.apple.com/join/x67XYfP6" target="_blank" rel="noopener">Beta para iOS (TestFlight)</a>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=app.movsy.android" target="_blank" rel="noopener">Beta para Android (Google Play)</a>
+          <button class="modal-dismiss js-modal-close" type="button">Ahora no</button>
         </div>
       </div>
     </div>

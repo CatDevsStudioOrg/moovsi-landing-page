@@ -95,6 +95,7 @@ h3 { font-size: 22px; font-weight: 600; }
   font-style: normal; color: var(--accent);
   background: linear-gradient(transparent 62%, var(--yellow) 62%);
 }
+.hero-copy { container-type: inline-size; }
 .hero-copy p { font-size: 20px; margin: 22px 0 32px; max-width: 480px; }
 .cta { display: flex; gap: 14px; flex-wrap: wrap; }
 
@@ -359,7 +360,22 @@ h3 { font-size: 22px; font-weight: 600; }
   box-shadow: 0 4px 14px rgba(244, 209, 52, 0.3);
 }
 
+/* Each phrase stays whole; if both don't fit on one line, each goes on its own line */
+.pill-text {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.35em;
+}
+.pill-text > span { white-space: nowrap; }
+/* Pill is ~394px wide on one line. Below that the phrases stack, so shrink the pill
+   to its widest phrase instead of leaving empty space on the right. */
+
+@container (max-width: 394px) {
+  .coming-soon-pill { width: min-content; }
+}
+
 .pulse-dot {
+  flex-shrink: 0;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -516,6 +532,8 @@ h3 { font-size: 22px; font-weight: 600; }
 
 .modal-actions {
   width: 100%;
+  display: grid;
+  gap: 14px;
 }
 
 .modal-actions .btn {
@@ -523,3 +541,10 @@ h3 { font-size: 22px; font-weight: 600; }
   padding: 14px;
   font-size: 16px;
 }
+
+.modal-dismiss {
+  background: none; border: none; cursor: pointer;
+  font-family: inherit; font-size: 15px; font-weight: 700;
+  color: #7a7685; padding: 6px;
+}
+.modal-dismiss:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
