@@ -21,7 +21,11 @@
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+/* The rotated marquee and the tilted hero cards stick out of the viewport on purpose.
+   `overflow-x: hidden` on body alone doesn't stop iOS Safari from widening the page,
+   so clip on the root and on <main> (clip, unlike hidden, creates no scroll container). */
+html { scroll-behavior: smooth; scroll-padding-top: 80px; overflow-x: hidden; overflow-x: clip; }
+main { overflow-x: hidden; overflow-x: clip; }
 
 body {
   font-family: var(--font-body);
@@ -29,6 +33,7 @@ body {
   color: var(--ink);
   line-height: 1.5;
   overflow-x: hidden;
+  overflow-x: clip;
 }
 
 img { display: block; max-width: 100%; height: auto; }
