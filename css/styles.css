@@ -104,7 +104,9 @@ h3 { font-size: 22px; font-weight: 600; }
 .hero-copy p { font-size: 20px; margin: 22px 0 32px; max-width: 480px; }
 .cta { display: flex; gap: 14px; flex-wrap: wrap; }
 
-.stage { position: relative; height: 520px; }
+/* The cards are placed in % of the stage, so cap its width: otherwise a wide
+   column (phone in landscape, very wide desktop) spreads the deck apart. */
+.stage { position: relative; height: 520px; width: 100%; max-width: 540px; margin-inline: auto; }
 .card {
   position: absolute; width: 250px; height: 360px; padding: 20px;
   border-radius: var(--radius); color: #fff;
@@ -240,7 +242,7 @@ h3 { font-size: 22px; font-weight: 600; }
   .hero, .rooms { grid-template-columns: 1fr; }
   .tiles { grid-template-columns: 1fr 1fr; }
   .steps { grid-template-columns: 1fr; }
-  .stage { height: 460px; }
+  .stage { height: 460px; max-width: 440px; }
   .card { width: 210px; height: 310px; }
   .nav-list li:not(:last-child) { display: none; }
 }
