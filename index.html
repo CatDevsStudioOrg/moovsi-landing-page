@@ -50,7 +50,7 @@
       <div class="hero-copy">
         <div class="coming-soon-pill">
           <span class="pulse-dot" aria-hidden="true"></span>
-          <span class="pill-text"><span>¡Muy pronto en las tiendas!</span> <span>¡Prueba la beta ahora!</span></span>
+          <span class="pill-text"><span>¡Ya disponible!</span> <span>En App Store y Google Play</span></span>
         </div>
         <h1 id="hero-title">¿Qué vemos hoy? <em>Desliza</em> y listo.</h1>
         <p>Moovsi convierte la eterna discusión de «elige tú» en un juego. Desliza películas y series, haz match con tus amigos y poneos de acuerdo en un minuto.</p>
@@ -163,12 +163,12 @@
     </section>
 
     <section class="final" id="descargar" aria-labelledby="final-title">
-      <span class="badge-tag">Beta abierta</span>
+      <span class="badge-tag">Ya disponible</span>
       <h2 id="final-title">La próxima peli la elegís en un minuto.</h2>
-      <p class="platforms">¡Muy pronto en App Store y Google Play! ¡Prueba la beta ahora en iPhone y Android!</p>
+      <p class="platforms">Descárgala gratis en iPhone y Android.</p>
       <ul class="stores">
-        <li><a class="btn btn-yellow" href="https://testflight.apple.com/join/x67XYfP6" target="_blank" rel="noopener">Beta para iOS (TestFlight)</a></li>
-        <li><a class="btn btn-yellow" href="https://play.google.com/store/apps/details?id=app.movsy.android" target="_blank" rel="noopener">Beta para Android (Google Play)</a></li>
+        <li><a class="store-badge" href="https://apps.apple.com/es/app/moovsi/id6828976838" target="_blank" rel="noopener"><img src="assets/img/app-store-badge-es.svg" alt="Consíguelo en el App Store" width="168" height="56"></a></li>
+        <li><a class="store-badge" href="https://play.google.com/store/apps/details?id=app.movsy.android" target="_blank" rel="noopener"><img src="assets/img/google-play-badge-es.png" alt="Disponible en Google Play" width="188" height="56"></a></li>
       </ul>
     </section>
   </main>
@@ -195,8 +195,8 @@
     <p class="copy"><small>© 2026 Catdevs · Este producto usa la API de TMDB pero no está avalado ni certificado por TMDB.</small></p>
   </footer>
 
-  <!-- Modal Beta abierta -->
-  <dialog id="coming-soon-modal" class="modal" aria-labelledby="modal-title">
+  <!-- Modal de descarga -->
+  <dialog id="download-modal" class="modal" aria-labelledby="modal-title">
     <div class="modal-card">
       <div class="modal-stripes" aria-hidden="true"></div>
       <button class="modal-close js-modal-close" type="button" aria-label="Cerrar ventana">&times;</button>
@@ -204,22 +204,22 @@
       <div class="modal-body">
         <div class="modal-badge-wrap">
           <img src="assets/img/app-icon.png" alt="Moovsi" width="80" height="80" class="modal-icon">
-          <span class="modal-stamp">¡BETA!</span>
+          <span class="modal-stamp">¡YA!</span>
         </div>
 
-        <h3 id="modal-title">¡Ya puedes probar Moovsi!</h3>
+        <h3 id="modal-title">¡Descarga Moovsi!</h3>
         
         <p class="modal-text">
-          Estamos en <strong>beta abierta</strong>: únete desde <strong>TestFlight</strong> en iPhone o desde <strong>Google Play</strong> en Android.
+          Ya está disponible gratis en el <strong>App Store</strong> y en <strong>Google Play</strong>.
         </p>
 
         <p class="modal-subtext">
-          Crea tu primera sala con amigos y elige qué ver sin discusiones en el sofá. Tus comentarios nos ayudan a mejorarla antes de llegar a las tiendas.
+          Crea tu primera sala con amigos y elige qué ver sin discusiones en el sofá.
         </p>
 
         <div class="modal-actions">
-          <a class="btn" href="https://testflight.apple.com/join/x67XYfP6" target="_blank" rel="noopener">Beta para iOS (TestFlight)</a>
-          <a class="btn" href="https://play.google.com/store/apps/details?id=app.movsy.android" target="_blank" rel="noopener">Beta para Android (Google Play)</a>
+          <a class="store-badge" href="https://apps.apple.com/es/app/moovsi/id6828976838" target="_blank" rel="noopener"><img src="assets/img/app-store-badge-es.svg" alt="Consíguelo en el App Store" width="168" height="56"></a>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.movsy.android" target="_blank" rel="noopener"><img src="assets/img/google-play-badge-es.png" alt="Disponible en Google Play" width="188" height="56"></a>
           <button class="modal-dismiss js-modal-close" type="button">Ahora no</button>
         </div>
       </div>
@@ -228,7 +228,7 @@
 
   <script>
     (function () {
-      const modal = document.getElementById('coming-soon-modal');
+      const modal = document.getElementById('download-modal');
       if (!modal) return;
 
       // Abrir modal con cualquier botón de descarga
